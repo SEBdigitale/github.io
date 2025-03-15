@@ -292,11 +292,10 @@ p{
     background-color: #fff;
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
-    padding: 20px;
     margin: 10px;
     border:1px solid gray;
     font-size: 18px;
-    height:150px
+    height:190px
 }
 
 .recommendation span {
