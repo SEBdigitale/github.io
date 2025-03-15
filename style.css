@@ -1,0 +1,523 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/FunnelDisplay-ExtraBold.ttf') format('truetype'),
+    url('fonts/FunnelDisplay-ExtraBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p{
+    color: white;
+}
+a:hover{
+    color: #5a4dbd;
+}
+
+a:visited{
+    color: white;
+}
+
+html{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: 0.1s;
+}
+
+/* Apply the font */
+body {
+    background-color: #0c0416;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+    font-family: 'CustomFont', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+hr{
+    border: 0.5px solid #705DF2;
+    margin: -10px 0 15px 0;
+}
+
+header .main-logo {
+    width: 250px;
+    height: auto;
+}
+
+
+
+/*#nav {*/
+/*    color: white;*/
+/*    font-family: 'CustomFont', sans-serif;*/
+/*    background-color: #140B29;*/
+/*    border-bottom: 1px solid #705DF1;*/
+/*    position: fixed; !* Sticks to the top *!*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between; !* Center the list *!*/
+/*    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); !* Optional shadow *!*/
+/*    z-index: 1000; !* Ensures it stays on top *!*/
+/*    padding: 0 40px;*/
+/*}*/
+
+#nav {
+    color: white;
+    font-family: 'CustomFont', sans-serif;
+    position: fixed; /* Sticks to the top */
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 100px;
+    background: rgba(20, 11, 41, 0.8); /* Transparent white */
+    backdrop-filter: blur(30px); /* Blurs the background */
+    -webkit-backdrop-filter: blur(30px); /* Safari support */
+    border-bottom: 1px solid #705DF1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensures it stays on top */
+    padding: 0 80px ;
+}
+
+
+
+#nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Spaces the items evenly */
+    padding: 0 100px;
+
+}
+
+.purple-box {
+    background-color: #312256 !important;
+    width: 165px;
+    height: 210px;
+    margin: 0 20px 10px 0;
+    border-radius: 30px;
+    text-align: center;
+    border: 1px solid #705DF1;
+    padding: -1px;
+}
+
+.purple-box:hover {
+    background-color: #312256 !important;
+    width: 165px;
+    height: 210px;
+    margin: 0 20px 10px 0;
+    border-radius: 30px;
+    text-align: center;
+    border: 1px solid #705DF1;
+    padding: -1px;
+    box-shadow: #5a4dbd 0px 0px 20px 0px;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+
+.purple-box p{
+    color: white;
+}
+
+#avatar{
+    position: fixed;
+    top: 20%;
+    left: -5%;
+    z-index: 1000;
+    width: 39%;
+}
+
+img.skills{
+    width: 156px !important;
+    height: 156px !important;
+}
+
+#express{
+    width: 145px !important;
+    height: 145px !important;
+    margin-top: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 5px;
+}
+
+.icon{
+    width: 28px;
+    height: 28px;
+    aspect-ratio: 1/1;
+    padding: 0 10px 0 0;
+}
+
+#nav ul li {
+    display: inline;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+#nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-radius: 5px !important;
+}
+
+
+.main-container{
+    margin: 0 auto 550px auto;
+    width: 100%;
+    flex-grow: 1;
+    min-height: 100vh;
+}
+
+.center-section{
+    width: 33%;
+    margin: 200px  auto -400px auto;
+    min-height: 100vh;
+    flex-grow: 1;
+}
+
+h1, h2, h3{
+    color: white;
+}
+
+h1{
+    font-size: 35px;
+}
+h3{
+    margin: 0;
+}
+p{
+    color: #705DF1;
+}
+#project{
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Aligns items vertically */
+    gap: 20px; /* Adds space between the image and text */
+}
+
+#projects li{
+    display: flex;
+    padding: 10px 0 10px 0;
+}
+
+#projects hr{
+    margin: 10px 0;
+}
+
+#projects img{
+    width: 100px;
+    object-fit: contain;
+    padding-right: 20px;
+}
+
+
+
+.project-text {
+    display: flex;
+    flex-direction: column; /* Stacks the h3 and p */
+}
+
+
+
+/* Bubble container */
+.all_recommendations {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+}
+
+/* Base Bubble Styling */
+/*.recommendation {*/
+/*    background-color: white;*/
+/*    padding: 20px;*/
+/*    font-size: 16px;*/
+/*    color: #333;*/
+/*    line-height: 1.5;*/
+/*    position: relative;*/
+/*    width: 280px;*/
+/*    height: auto;*/
+/*    border-radius: 30px; !* Ensures rounded edges *!*/
+/*    box-shadow: #5a4dbd 0px 0px 20px 0px;*/
+/*    transition: 0.3s;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/* Recommendations */
+
+/*.all_recommendations {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    margin-left: 1in;*/
+/*    flex-direction: row;*/
+/*    flex-flow: wrap;*/
+/*    padding: 20px;*/
+/*}*/
+
+.recommendation {
+    font-style: italic;
+    text-align: left;
+    width: 21.875rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 20px;
+    margin: 10px;
+    border:1px solid gray;
+    font-size: 18px;
+    height:150px
+}
+
+.recommendation span {
+    color: #7600bc;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/* END */
+
+fieldset{
+    border: none;
+}
+.input-field, .textarea-field {
+    width: 95%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #705DF1;
+    border-radius: 25px;
+    background-color: #140B29;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-field:focus, .textarea-field:focus {
+    width: 95%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #705DF1;
+    background-color: #140B29;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    box-shadow: #5a4dbd 0px 0px 20px 0px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #312256; /* Change this to any color */
+    opacity: 1; /* Ensures full visibility */
+}
+
+/* For better browser support */
+input::-webkit-input-placeholder { color: #312256; } /* Chrome, Safari */
+input::-moz-placeholder { color: #312256; } /* Firefox */
+input:-ms-input-placeholder { color: #312256; } /* Internet Explorer */
+input:-moz-placeholder { color: #312256; } /* Older Firefox */
+
+textarea::-webkit-input-placeholder { color: #312256; } /* Chrome, Safari */
+textarea::-moz-placeholder { color: #312256; } /* Firefox */
+textarea:-ms-input-placeholder { color: #312256; } /* Internet Explorer */
+textarea:-moz-placeholder { color: #312256; } /* Older Firefox */
+
+.textarea-field {
+    height: 150px;
+    border-radius: 15px;
+}
+
+.submit-btn {
+    width: 60%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: #7464f1;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #5a4dbd;
+}
+
+/* Form Pop-up */
+
+.popup {
+    width:400px;
+    background-color: #140B29;
+    border: 1px solid #5a4dbd;
+    border-radius: 3mm;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: fixed;
+    /* padding: 30px; */
+    visibility: hidden;
+}
+
+.popup img {
+    padding-top: 20px;
+    width: 24px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.popup button {
+    background-color: #5a4dbd;
+    border: 1px solid #312256;
+    color: #fff;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+    margin-left: 25%;
+}
+
+.popup button:hover {
+    background-color: #fff;
+    border: 1px solid #0c0416;
+    color: #140B29;
+    display: block;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 25%;
+}
+
+
+/* Up Arrow */
+.up-arrow{
+    position: fixed;
+    bottom: 25%;
+    right: 3%;
+    z-index: 1000;
+    width: 3%;
+}
+/* Make the body take the full height */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes full screen height */
+}
+
+/* Push footer down when content is short */
+.main-container {
+    flex-grow: 1; /* Pushes the footer to the bottom */
+}
+
+/* Footer Styling */
+footer {
+    background: #140B29; /* Same color as the navbar */
+    color: white;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 0;
+    border-top: 1px solid #7464f1;
+}
+
+/* Left section: Logo & Contact Info */
+footer div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Footer Logo */
+.footer-logo {
+    width: 200px; /* Adjust as needed */
+    height: auto;
+}
+
+/* Footer Links */
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Space between items */
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 5px 10px !important;
+}
+
+footer ul li:hover, footer ul li:active, footer ul li:visited{
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-radius: 5px !important;
+    padding: 5px 10px !important;
+}
+
+.footer-nav{
+    margin-right: 100px;
+}
+
+/* Tooltip styling */
+.tooltip {
+    position: relative; /* Needed for absolute positioning of tooltip */
+    cursor: pointer;
+}
+
+/* Tooltip text (hidden by default) */
+.tooltip::after {
+    content: attr(data-tooltip); /* Get text from data-tooltip attribute */
+    position: absolute;
+    bottom: 100%; /* Position above the element */
+    left: 40%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    color: #140B29;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    opacity: 0.5;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    width: 200px; /* Set a fixed width to force wrapping */
+    text-align: center;
+    white-space: normal; /* Allows text to wrap */
+}
+
+/* Show tooltip on hover */
+.tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
