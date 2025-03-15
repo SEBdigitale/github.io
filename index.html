@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo-seb.png">
 </head>
 <body>
 <header>
     <nav id="nav">
-        <img src="img/logo-seb-mars.svg" class="main-logo">
-        <ul>
+        <img src="img/logo-seb-mars2.svg" class="main-logo">
+        <ul id="top">
             <li><a href="#about-me">About me</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects-id">Projects</a></li>
@@ -17,17 +18,20 @@
         </ul>
     </nav>
 </header>
+<div>
+    <a href="#about-me"><img src="img/up-arrow.svg" alt="up-arrow" class="up-arrow"></a>
+</div>
 <div class="main-container">
     <div class="center-section">
         <div>
-            <img src="img/seb-avatar.png" id="avatar">
+            <img src="img/gif/seb-animated2.gif" id="avatar">
         </div>
     <section>
         <div class="title" id="about-me">
-            <h1>Hi I’m SEB Fullstack & UX Engineer</h1>
+            <h1>Hi, I’m SEB, Fullstack and UX/UI Engineer and avid Art Director</h1>
         </div>
         <div class="intro">
-            <p>I am a full stack developer with 2 years of experience in both application and presentation layers. I have worked on applications and microservices deployed on IBM Cloud. I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, Sentiment analyzer to name a few.</p>
+            <p>As a Full-Stack Engineer at FanFaktor, I design and develop dynamic, high-performance applications that enhance fan engagement in the music industry. From building robust backend systems with scalable databases and APIs to crafting intuitive front-end experiences, I ensure seamless user interactions. Leveraging modern technologies like JavaScript (React, Node.js), Java, and cloud services, I create feature-rich platforms that connect artists and fans through immersive digital experiences. My focus is on optimizing performance, security, and scalability, ensuring that FanFaktor Music remains a cutting-edge hub for music enthusiasts worldwide. 🚀🎶</p>
         </div>
     </section>
     <section >
@@ -40,62 +44,106 @@
             <table>
                 <tr>
                     <td>
+                        <span class="tooltip" data-tooltip="HTML5 is the standard for structuring and presenting content on the web. It is a markup language used to create web pages and web applications. HTML5 is the latest version of HTML and includes new features and improvements over previous versions. It is widely supported by all modern web browsers and is used by developers to create interactive and dynamic web pages.">
                         <div class="purple-box">
                             <img src="img/html5.png" alt="" class="skills">
                             <p>5 years</p>
                         </div>
+                        </span>
                     </td>
                     <td>
+                        <span class="tooltip" data-tooltip="CSS3 is the latest version of the Cascading Style Sheets (CSS) language, which is used to style and layout web pages. It includes new features and improvements over previous versions of CSS, such as better support for responsive design, animations, and transitions. CSS3 is widely supported by all modern web browsers and is used by developers to create visually appealing and interactive web pages.">
                         <div class="purple-box">
                             <img src="img/css3.png" alt="" class="skills">
                             <p>5 years</p>
                         </div>
+                        </span>
                     </td>
                     <td>
+                        <span class="tooltip" data-tooltip="Javascript is the programming language that is used to make web pages interactive. It is a client-side scripting language that is embedded within HTML and executed by the web browser. Javascript is used to create interactive effects on web pages, such as animations, form validation, and dynamic content updates. It is widely supported by all modern web browsers and is used by developers to create engaging and dynamic web experiences.">
                         <div class="purple-box">
                             <img src="img/js.png" alt="" class="skills">
                             <p>2 years</p>
                         </div>
+                        </span>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <div class="purple-box">
-                            <img src="img/nodejs.png" alt="" class="skills">
-                            <p>0.5 years</p>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="purple-box">
-                            <img src="img/mongodb.png" alt="" class="skills">
-                            <p>0.5 years</p>
-                        </div>
-                    </td>
-                    <td>
+                        <span class="tooltip" data-tooltip="React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React is used to build reusable UI components and can be used to build complex applications with a simple and declarative syntax. It is designed to be fast, scalable, and easy to use, and is widely used by developers to build web applications and mobile applications.">
                         <div class="purple-box">
                             <img src="img/react.png" alt="" class="skills">
-                            <p>0.2 years</p>
+                            <p>6 months</p>
                         </div>
+                        </span>
+                    </td>
+                    <td>
+                        <span class="tooltip" data-tooltip="Angular is a JavaScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS.">
+                        <div class="purple-box">
+                            <img src="img/angular.png" alt="" class="skills">
+                            <p>6 months</p>
+                        </div>
+                        </span>
+                    </td>
+                    <td>
+                        <span class="tooltip" data-tooltip="Vue is a progressive JavaScript framework used for building user interfaces. It is designed to be incrementally adoptable, meaning it can be easily integrated into projects that use other libraries or frameworks.">
+                        <div class="purple-box">
+                            <img src="img/vue.png" alt="" class="skills">
+                            <p>4 months</p>
+                        </div>
+                        </span>
                     </td>
                 </tr>
                 <tr>
                     <td>
+                        <span class="tooltip" data-tooltip="Express is a node js framework">
                         <div class="purple-box">
                             <img src="img/express.png" alt="" class="skills" id="express">
-                            <p>0.5 years</p>
+                            <p>6 months</p>
                         </div>
+                        </span>
                     </td>
                     <td>
+                        <span class="tooltip" data-tooltip="Mongo db is a NoSQL database">
                         <div class="purple-box">
-                            <img src="img/java.png" alt="" class="skills">
+                            <img src="img/mongodb.png" alt="" class="skills">
                             <p>2 years</p>
                         </div>
+                        </span>
                     </td>
                     <td>
+                        <span class="tooltip" data-tooltip="Node Js is a javascript runtime built on Chrome's V8 Javascript engine">
+                        <div class="purple-box">
+                            <img src="img/nodejs.png" alt="" class="skills">
+                            <p>2 years</p>
+                        </div>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="tooltip" data-tooltip="C++ is a general-purpose programming language created as an extension of the C programming language">
                         <div class="purple-box">
                             <img src="img/cplusplus.png" alt="" class="skills">
                             <p>2 years</p>
                         </div>
+                        </span>
+                    </td>
+                    <td>
+                        <span class="tooltip" data-tooltip="C# is a multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines">
+                        <div class="purple-box">
+                            <img src="img/csharp.png" alt="" class="skills">
+                            <p>2 years</p>
+                        </div>
+                        </span>
+                    </td>
+                    <td>
+                        <span class="tooltip" data-tooltip="Java is a class-based, object-oriented programming language">
+                        <div class="purple-box">
+                            <img src="img/java.png" alt="" class="skills">
+                            <p>2 years</p>
+                        </div>
+                        </span>
                     </td>
                 </tr>
             </table>
@@ -110,91 +158,133 @@
         <div id="projects">
             <ul>
                 <li>
+                    <div class="purple-box>">
                     <img src="img/fanfaktor-music.png" alt="" class="">
+                    </div>
                     <div class="project-text">
                     <h3>FanFaktor Music Revolution</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>FanFaktor Music Revolution is an innovative platform that connects artists and fans through an interactive and immersive music experience. By integrating advanced technologies, it redefines music discovery, sharing, and monetization within a dynamic and engaging ecosystem.</p>
                     </div>
                 </li>
                 <hr>
                 <li>
+                    <div class="purple-box>">
                     <img src="img/fanfaktor-shows.png" alt="" class="">
+                    </div>
                     <div class="project-text">
                         <h3>FanFaktor Music Show Immersions</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>FanFaktor Music Show Immersions is an innovative experience that brings fans closer to artists through immersive and interactive music performances. By leveraging advanced technologies, it transforms live music shows into dynamic, engaging, and unforgettable events.</p>
                     </div>
                 </li>
                 <hr>
                 <li>
+                    <div class="purple-box>">
                     <img src="img/fanfaktor-beethoven.png" alt="" class="">
+                    </div>
                     <div class="project-text">
                     <h3>FF Beethoven Collaborative Music Creation</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Beethoven Collaborative Music Creation is an innovative platform that empowers artists and fans to co-create music in an interactive and immersive way. By integrating advanced technologies, it redefines collaborative composition, enabling a dynamic and engaging creative experience.</p>
                     </div>
                 </li>
                 <hr>
                 <li>
+                    <div class="purple-box>">
                     <img src="img/myro-smart-web-commerce.png" alt="" class="">
+                    </div>
                     <div class="project-text">
                     <h3>Myro Smart Web Commerce</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Myro Smart Web Commerce is a next-generation e-commerce platform designed for small business owners and individuals, providing a cost-effective, automated solution to launch online stores effortlessly. With its built-in viral promotional tool, Myro Smart Web helps users instantly market their stores to their entire email network, accelerating visibility and sales.
+                    </p>
                     </div>
                 </li>
                 <hr>
                 <li>
+                    <div class="purple-box>">
                     <img src="img/myro-smart-web-school.png" alt="" class="">
+                    </div>
                     <div class="project-text">
                     <h3>Myro Smart Web School</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Myro Smart Web School is a decentralized, peer-to-peer (P2P) education system that allows anyone to create and operate a fully digital school without the need for traditional servers. This innovative platform enables educators to offer full academic programs, courses, and student support in a fully online, serverless environment, democratizing access to education and fostering a global learning community.</p>
                     </div>
                 </li>
                 <hr>
                 <li>
+                    <div class="purple-box>">
                     <img src="img/myro-smart-web-entertainment.png" alt="" class="">
+                    </div>
                     <div class="project-text">
                     <h3>Myro Smart Web Entertainment</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Myro Smart Web Entertainment is a decentralized, peer-to-peer (P2P) entertainment platform where anyone can create and operate their own digital entertainment hub. From streaming services and virtual events to interactive media experiences, this serverless system empowers creators to distribute content, engage audiences, and monetize their work without relying on traditional platforms.</p>
                     </div>
                 </li>
                 <hr>
             </ul>
         </div>
     </section>
-    <section >
-        <div class="title" id="recommendations">
+    <section id="recommendations">
+        <div class="title" >
             <img src="img/recommendation.png" alt="" class="icon">
             <h2>Recommendations</h2>
         </div>
         <hr>
-        <div class="bubble-container">
-            <div class="bubble ">I am a full stack developer with 2 years of experience in both application and presentation layers...</div>
-            <div class="bubble ">I am a full stack developer with 2 years of experience in both application and presentation layers...</div>
-            <div class="bubble ">I am a full stack developer with 2 years of experience in both application and presentation layers...</div>
-            <div class="bubble ">I am a full stack developer with 2 years of experience in both application and presentation layers...</div>
-            <div class="bubble ">I am a full stack developer with 2 years of experience in both application and presentation layers...</div>
-            <div class="bubble ">I am a full stack developer with 2 years of experience in both application and presentation layers...</div>
-        </div>
+        <div class="all_recommendations" id="all_recommendations">
+            <div class="recommendation">
+                <span>&#8220;</span>
+                Jane is a very quick learner and quickly grasps key concepts of Web development.
+                She got a great attitude & she is an excellent team player.
+                She has a curious mind and asks the right question.
+                She takes initiative within a team and has potentials to lead the team.
+                <span>&#8221;</span>
+            </div>
+            <div class="recommendation">
+                <span>&#8220;</span>
+                Working with Jane has been an awesome experience.
+                She is highly knowledgable and always goes the extra step to make sure everything is right.
+                For any future projects that need her expertise I would definitely want to work with her again.
+                <span>&#8221;</span>
+            </div>
+            <div class="recommendation">
+                <span>&#8220;</span>
+                I had worked along with Jane during the initial phase of our venture which needed Web development.
+                She is a committed resource who has in depth knowledge about the domain.
+                She will be an asset for any organisation!
+                <span>&#8221;</span>
+            </div></div>
     </section>
-    <section>
         <div class="title">
             <img src="img/leave-a-recomnnedation.png" alt="" class="icon">
             <h2>Leave a Recommendation</h2>
         </div>
         <hr>
-        <div class="form-container">
-            <form>
-                <input type="text" placeholder="Leave your first name" class="input-field">
-                <input type="text" placeholder="Leave your last name" class="input-field">
-                <textarea placeholder="Leave a message" class="textarea-field"></textarea>
-                <button type="submit" class="submit-btn">Submit</button>
-            </form>
-        </div>
-    </section>
+        <section id="contact">
+            <div class="flex_center">
+                <fieldset>
+                    <input type="text" class="input-field" placeholder="Name (Optional)"> <br/>
+                    <textarea class="textarea-field" id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+                    <div class="flex_center">
+                        <button class="submit-btn" id="recommend_btn" onclick="addRecommendation()">Submit</button>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
 </div>
 </div>
+
+
+<!-- Pop Up -->
+
+<div class="popup" id="popup" class="flex_center">
+    <img src="img/up-arrow.svg"/>
+    <h3>Thank you for submitting your recommendation for SEB MARS</h3>
+    <button onclick="showPopup(false)">Ok</button>
+</div>
+
+<!-- END POP -->
+
+
 <footer>
     <div>
-        <img src="img/logo-seb-mars.svg" alt="SEB MARS Logo" class="footer-logo">
+        <img src="img/logo-seb-mars2.svg" alt="SEB MARS Logo" class="footer-logo">
         <p>sebastien.marchi@gmail.com<br>(514)463-2320</p>
     </div>
     <div class="footer-nav">
@@ -206,6 +296,6 @@
         </ul>
     </div>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
