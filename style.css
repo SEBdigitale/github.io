@@ -488,6 +488,11 @@ footer ul li {
     padding: 5px 10px !important;
 }
 
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
 footer ul li:hover, footer ul li:active, footer ul li:visited{
     background: rgba(255, 255, 255, 0.2) !important;
     border-radius: 5px !important;
