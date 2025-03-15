@@ -9,6 +9,10 @@
 p{
     color: white;
 }
+
+a{
+    color: white !important;
+}
 a:hover{
     color: #5a4dbd;
 }
