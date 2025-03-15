@@ -14,7 +14,11 @@ a:hover{
 }
 
 a:visited{
-    color: white;
+    color: white !important;
+}
+
+a:active{
+    color: white !important;
 }
 
 html{
